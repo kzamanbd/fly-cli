@@ -8,7 +8,10 @@ import (
 
 func main() {
 	if len(os.Args) < 2 {
-		fmt.Println("Expected 'up', 'down', or 'logs' subcommands.")
+		fmt.Println("usage: fly [up|down|logs|--help|--version] command")
+		fmt.Println("Run 'fly --help' for more information.")
+		fmt.Println("Available commands: up, down, logs, --help, --version")
+		fmt.Println("For more information, visit: https://github.com/kzamanbd/fly-cli")
 		os.Exit(1)
 	}
 
@@ -64,18 +67,22 @@ func logs() {
 }
 
 func help() {
-	fmt.Println("usage: fly [up|down|logs]")
-	fmt.Println("  fly --version Displays the version of the CLI tool")
-	fmt.Println("  fly           Displays details about the application")
-	fmt.Println("  fly --help    Provides help texts and usage instructions for the CLI tool")
-	fmt.Println("  fly up        Starts Docker containers defined in the Docker Compose file")
-	fmt.Println("  fly down      Stops and removes Docker containers defined in the Docker Compose file")
-	fmt.Println("  fly logs      Displays logs from Docker containers defined in the Docker Compose file")
+	fmt.Println("usage: fly [up|down|logs|--help|--version]")
+	fmt.Println("    fly --version  Displays the version of the CLI tool")
+	fmt.Println("    fly            Displays details about the application")
+	fmt.Println("    fly --help     Provides help texts and usage instructions for the CLI tool")
+	fmt.Println("    fly up         Starts Docker containers defined in the Docker Compose file")
+	fmt.Println("    fly down       Stops and removes Docker containers defined in the Docker Compose file")
+	fmt.Println("    fly logs       Displays logs from Docker containers defined in the Docker Compose file")
 
 	// summary of the application and its commands
 	fmt.Println("\nFly is a simple CLI tool for managing Docker containers using Docker Compose.")
 }
 
 func version() {
-	fmt.Println("fly version 0.1")
+	fmt.Println("fly version 1.0")
+	fmt.Println("Fly is a simple CLI tool for managing Docker containers using Docker Compose.")
+	fmt.Println("Developed by: Kamruzzaman")
+	fmt.Println("Email: kzamanbn@gmail.com")
+
 }
