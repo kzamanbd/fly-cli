@@ -21,6 +21,8 @@ func main() {
 		logs()
 	case "--help":
 		help()
+	case "--version":
+		version()
 	default:
 		fmt.Printf("Unknown command: %s\n", os.Args[1])
 		fmt.Println("Available commands: up, down, logs, --help")
@@ -62,10 +64,18 @@ func logs() {
 }
 
 func help() {
-	fmt.Println("Commands and Their Functions:")
-	fmt.Println("  fly          Displays details about the application")
-	fmt.Println("  fly --help   Provides help texts and usage instructions for the CLI tool")
-	fmt.Println("  fly up       Starts Docker containers defined in the Docker Compose file")
-	fmt.Println("  fly down     Stops and removes Docker containers defined in the Docker Compose file")
-	fmt.Println("  fly logs     Displays logs from Docker containers defined in the Docker Compose file")
+	fmt.Println("usage: fly [up|down|logs]")
+	fmt.Println("  fly --version Displays the version of the CLI tool")
+	fmt.Println("  fly           Displays details about the application")
+	fmt.Println("  fly --help    Provides help texts and usage instructions for the CLI tool")
+	fmt.Println("  fly up        Starts Docker containers defined in the Docker Compose file")
+	fmt.Println("  fly down      Stops and removes Docker containers defined in the Docker Compose file")
+	fmt.Println("  fly logs      Displays logs from Docker containers defined in the Docker Compose file")
+
+	// summary of the application and its commands
+	fmt.Println("\nFly is a simple CLI tool for managing Docker containers using Docker Compose.")
+}
+
+func version() {
+	fmt.Println("fly version 0.1")
 }
