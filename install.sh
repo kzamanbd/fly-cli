@@ -4,7 +4,7 @@ set -e
 
 CLI_NAME="fly"
 INSTALL_DIR="/usr/local/bin"
-REPO_URL="https://github.com/kzamanbd/fly-cli/releases/download/v1.0.0/bin"
+REPO_URL="https://github.com/kzamanbd/fly-cli/releases/download/v1.0.0"
 
 # Determine the operating system
 OS="$(uname -s)"
