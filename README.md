@@ -58,7 +58,13 @@ Use the following commands to manage your Docker containers:
 
 ## Contributing
 
-Please feel free to submit issues, fork the repository, and send pull requests!
+Please feel free to submit issues, fork the repository, and send pull requests! To get started, you can follow the steps below:
+
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/feature-name`).
+3. Make changes and commit them (`git commit -am 'Add new feature'`).
+4. Push the changes to the new branch (`git push origin feature/feature-name`).
+5. Create a pull request.
 
 ## License
 
