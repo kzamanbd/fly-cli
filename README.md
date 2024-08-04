@@ -29,7 +29,7 @@ Fly CLI is a tool to manage Docker containers using Docker Compose commands. It 
 
 ### Windows
 
-1. Download `fly.exe` from [here](https://github.com/kzamanbd/fly-cli/releases/download/v1.0.0/bin/fly.exe).
+1. Download `fly.exe` from [here](https://github.com/kzamanbd/fly-cli/releases/download/v1.0.0/fly.exe).
 2. Move `fly.exe` to a directory included in your system's PATH (e.g., `C:\fly-cli`).
 
 3. Add the directory to your PATH:
