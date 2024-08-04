@@ -1,4 +1,4 @@
-# Fly CLI - Docker Compose Simplified
+# 🚀 Fly CLI - Docker Compose Simplified
 
 Fly CLI is a tool to manage Docker containers using Docker Compose commands. It simplifies the common operations needed to start, stop, and view logs for your Docker containers.
 
